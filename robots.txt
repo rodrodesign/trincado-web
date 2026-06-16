@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://trincadosport.com/sitemap.xml

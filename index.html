@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Trincado Sport · Academia y Equipo de Ciclismo en Zapopan</title>
+<meta name="description" content="Academia y equipo de ciclismo en Zapopan, Jalisco. Entrenamiento de MTB, Ruta, Enduro y Trail Running para niños desde 6 años, adolescentes y adultos. Desde 2009." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#f4f1ec" />
+<link rel="canonical" href="https://trincadosport.com/" />
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Trincado Sport" />
+<meta property="og:title" content="Trincado Sport · Academia y Equipo de Ciclismo" />
+<meta property="og:description" content="MTB · Ruta · Enduro · Trail Running. Entrenamiento para todas las edades en Zapopan, Jalisco. Desde 2009." />
+<meta property="og:url" content="https://trincadosport.com/" />
+<meta property="og:image" content="https://trincadosport.com/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="es_MX" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Trincado Sport · Academia y Equipo de Ciclismo" />
+<meta name="twitter:description" content="MTB · Ruta · Enduro · Trail Running en Zapopan, Jalisco. Desde 2009." />
+<meta name="twitter:image" content="https://trincadosport.com/assets/og.jpg" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+<link rel="manifest" href="/manifest.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Trincado Sport",
+  "description": "Academia y equipo de ciclismo. MTB, Ruta, Enduro y Trail Running para todas las edades.",
+  "url": "https://trincadosport.com",
+  "email": "info@trincadosport.com",
+  "telephone": "+523310320177",
+  "foundingDate": "2009-11-10",
+  "areaServed": "Zapopan, Jalisco, México",
+  "sameAs": ["https://www.instagram.com/trincadosport","https://www.facebook.com/TrincadoSport"]
+}
+</script>
+
+<style>
+  :root{
+    --bg:#f4f1ec;
+    --ink:#111114;
+    --ink-soft:#52525b;
+    --ink-mute:#8a8a93;
+    --line:rgba(17,17,20,.08);
+    --accent:#ff5a2c;
+    --glass:rgba(255,255,255,.62);
+    --radius:22px;
+    --shadow:0 1px 2px rgba(17,17,20,.04), 0 18px 48px -22px rgba(17,17,20,.22);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:"Outfit",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:var(--bg); color:var(--ink);
+    min-height:100dvh; line-height:1.5; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden; position:relative;
+  }
+  /* soft ambient light */
+  .glow{position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden}
+  .glow::before,.glow::after{content:""; position:absolute; border-radius:50%; filter:blur(90px); opacity:.55}
+  .glow::before{width:60vw;height:60vw; right:-15vw; top:-18vw; background:radial-gradient(circle,#ffd9c2,transparent 65%)}
+  .glow::after{width:55vw;height:55vw; left:-18vw; bottom:-22vw; background:radial-gradient(circle,#e9efe4,transparent 65%)}
+  .contours{position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.05}
+  .contours svg{width:120%; height:120%; position:absolute; left:-10%; top:-5%}
+
+  .wrap{position:relative; z-index:1; max-width:1080px; margin:0 auto; padding:0 22px}
+
+  /* header */
+  header{position:sticky; top:0; z-index:20; padding:14px 0}
+  .nav{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    background:var(--glass); backdrop-filter:blur(18px) saturate(1.5); -webkit-backdrop-filter:blur(18px) saturate(1.5);
+    border:1px solid rgba(255,255,255,.7); border-radius:18px; padding:10px 12px 10px 16px;
+    box-shadow:var(--shadow);
+  }
+  .nav img{height:18px; width:auto; display:block}
+  .members{
+    display:inline-flex; align-items:center; gap:7px; font-size:14px; font-weight:600; color:var(--ink);
+    text-decoration:none; background:rgba(17,17,20,.05); border:1px solid var(--line);
+    padding:9px 14px; border-radius:12px; transition:.2s;
+  }
+  .members:hover{background:rgba(17,17,20,.09)}
+  .members svg{width:15px;height:15px}
+
+  /* hero */
+  .hero{text-align:center; padding:clamp(48px,11vw,104px) 0 clamp(36px,7vw,64px)}
+  .badge{
+    display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; letter-spacing:.02em;
+    color:var(--ink-soft); background:var(--glass); border:1px solid rgba(255,255,255,.7);
+    padding:7px 14px; border-radius:999px; box-shadow:var(--shadow); margin-bottom:clamp(28px,6vw,40px);
+  }
+  .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+  .hero-logo{width:min(560px,82vw); height:auto; margin:0 auto clamp(24px,5vw,34px)}
+  .tag{font-size:clamp(26px,6.4vw,46px); font-weight:700; letter-spacing:-.02em; line-height:1.1; max-width:14ch; margin:0 auto}
+  .tag em{font-style:normal; color:var(--accent)}
+  .sub{font-size:clamp(15px,3.6vw,18px); color:var(--ink-soft); max-width:46ch; margin:18px auto 0}
+
+  .modes{display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin:clamp(26px,5vw,34px) auto 0; max-width:560px}
+  .mode{
+    font-size:13px; font-weight:600; color:var(--ink); background:var(--glass);
+    border:1px solid rgba(255,255,255,.7); padding:9px 15px; border-radius:999px; box-shadow:var(--shadow);
+  }
+
+  .cta{display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:clamp(30px,6vw,40px)}
+  .btn{display:inline-flex; align-items:center; gap:9px; font-size:15px; font-weight:600; text-decoration:none; padding:15px 24px; border-radius:14px; transition:.2s; border:1px solid transparent}
+  .btn svg{width:18px;height:18px}
+  .btn-primary{background:var(--accent); color:#fff; box-shadow:0 10px 26px -8px rgba(255,90,44,.6)}
+  .btn-primary:hover{transform:translateY(-1px); box-shadow:0 14px 30px -8px rgba(255,90,44,.7)}
+  .btn-ghost{background:var(--glass); color:var(--ink); border-color:rgba(255,255,255,.7); box-shadow:var(--shadow); backdrop-filter:blur(12px)}
+  .btn-ghost:hover{background:#fff}
+
+  /* locations */
+  .places{display:grid; grid-template-columns:1fr; gap:14px; margin:clamp(48px,9vw,80px) 0 0}
+  .card{
+    background:var(--glass); backdrop-filter:blur(16px) saturate(1.4); -webkit-backdrop-filter:blur(16px) saturate(1.4);
+    border:1px solid rgba(255,255,255,.7); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow);
+    position:relative; overflow:hidden;
+  }
+  .card::before{content:""; position:absolute; inset:0 0 auto 0; height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent)}
+  .card h3{font-size:17px; font-weight:700; letter-spacing:-.01em; display:flex; align-items:center; gap:9px}
+  .card .ico{width:34px;height:34px;border-radius:10px;background:rgba(17,17,20,.05);display:grid;place-items:center;flex:none}
+  .card .ico svg{width:18px;height:18px;color:var(--ink)}
+  .card p{font-size:14px; color:var(--ink-soft); margin-top:10px}
+  .card .pill{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--accent); background:rgba(255,90,44,.1); padding:4px 9px; border-radius:7px; margin-top:12px}
+
+  /* footer */
+  footer{margin:clamp(56px,10vw,96px) 0 40px; text-align:center}
+  .foot-links{display:flex; flex-wrap:wrap; justify-content:center; gap:10px 22px; margin-bottom:22px}
+  .foot-links a{font-size:14px; font-weight:500; color:var(--ink-soft); text-decoration:none; transition:.2s}
+  .foot-links a:hover{color:var(--ink)}
+  .copy{font-size:12.5px; color:var(--ink-mute)}
+  .copy strong{color:var(--ink-soft); font-weight:600}
+
+  @media(min-width:720px){
+    .places{grid-template-columns:repeat(3,1fr)}
+  }
+  @media(prefers-reduced-motion:no-preference){
+    .btn,.members{will-change:transform}
+  }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="contours" aria-hidden="true">
+  <svg viewBox="0 0 1200 800" preserveAspectRatio="none" fill="none" stroke="#111114" stroke-width="1.4">
+    <path d="M-50 180 C 200 120, 420 240, 650 170 S 1050 90, 1260 200"/>
+    <path d="M-50 300 C 220 250, 430 360, 660 290 S 1060 220, 1260 320"/>
+    <path d="M-50 430 C 200 380, 440 480, 670 420 S 1070 350, 1260 450"/>
+    <path d="M-50 560 C 230 520, 420 610, 660 540 S 1080 480, 1260 580"/>
+    <path d="M-50 690 C 210 650, 440 730, 670 670 S 1070 610, 1260 700"/>
+  </svg>
+</div>
+
+<div class="wrap">
+  <header>
+    <nav class="nav">
+      <img src="/assets/logo-dark.png" alt="Trincado Sport" />
+      <a class="members" href="https://app.trincadosport.com" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Acceso miembros
+      </a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="badge"><span class="dot"></span>Academia y Equipo · desde 2009</span>
+    <img class="hero-logo" src="/assets/logo-dark.png" alt="Trincado Sport" />
+    <h1 class="tag">Formamos ciclistas. Construimos <em>familia</em>.</h1>
+    <p class="sub">Entrenamiento de MTB, Ruta, Enduro y Trail Running en Zapopan, Jalisco. Para niños desde 6 años, adolescentes y adultos.</p>
+
+    <div class="modes">
+      <span class="mode">Cross Country / MTB</span>
+      <span class="mode">Ruta</span>
+      <span class="mode">Enduro</span>
+      <span class="mode">Trail Running</span>
+    </div>
+
+    <div class="cta">
+      <a class="btn btn-primary" href="https://wa.me/523310320177?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20una%20clase%20de%20prueba%20en%20Trincado%20Sport." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+        Agenda tu clase de prueba
+      </a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/trincadosport" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Síguenos en Instagram
+      </a>
+    </div>
+  </section>
+
+  <section class="places">
+    <div class="card">
+      <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg></span>Bosque La Primavera</h3>
+      <p>Entrenamientos de montaña y ruta en uno de los mejores escenarios naturales de Jalisco.</p>
+    </div>
+    <div class="card">
+      <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3.5 11.5 4-8 2.5 4.5M6 9h6l3 8.5"/></svg></span>Bike 88</h3>
+      <p>Nuestra tienda y taller de bicicletas. Av. Patria 870, Zapopan. Servicio, refacciones y equipamiento.</p>
+    </div>
+    <div class="card">
+      <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>El Tecuán</h3>
+      <p>Nueva base outdoor dentro del Bosque La Primavera. Taller móvil y punto de encuentro para rodadas.</p>
+      <span class="pill">Próximamente</span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-links">
+      <a href="mailto:info@trincadosport.com">info@trincadosport.com</a>
+      <a href="tel:+523310320177">+52 33 1032 0177</a>
+      <a href="https://app.trincadosport.com" target="_blank" rel="noopener">Acceso miembros</a>
+      <a href="https://www.instagram.com/trincadosport" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/TrincadoSport" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p class="copy"><strong>Trincado Sport</strong> · Academia y Equipo de Ciclismo · Zapopan, Jalisco · © 2009–2026</p>
+  </footer>
+</div>
+</body>
+</html>
