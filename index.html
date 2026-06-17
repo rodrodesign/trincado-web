@@ -52,11 +52,11 @@
 <style>
   :root{
     --bg:#f4f1ec;
-    --ink:#111114;
+    --ink:#0A0A0A;
     --ink-soft:#52525b;
     --ink-mute:#8a8a93;
     --line:rgba(17,17,20,.08);
-    --accent:#111114;
+    --accent:#EDFF00;
     --glass:rgba(255,255,255,.62);
     --radius:22px;
     --shadow:0 1px 2px rgba(17,17,20,.04), 0 18px 48px -22px rgba(17,17,20,.22);
@@ -87,10 +87,10 @@
     border:1px solid rgba(255,255,255,.7); border-radius:18px; padding:10px 12px 10px 16px;
     box-shadow:var(--shadow);
   }
-  .nav img{height:18px; width:auto; display:block}
+  .nav img{height:16px; width:auto; display:block}
   .members{
     display:inline-flex; align-items:center; gap:7px; font-size:14px; font-weight:600; color:var(--ink);
-    text-decoration:none; background:rgba(17,17,20,.05); border:1px solid var(--line);
+    text-decoration:none; white-space:nowrap; background:rgba(17,17,20,.05); border:1px solid var(--line);
     padding:9px 14px; border-radius:12px; transition:.2s;
   }
   .members:hover{background:rgba(17,17,20,.09)}
@@ -105,9 +105,9 @@
   }
   .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
   img{max-width:100%}
-  .hero-logo{width:min(520px,76vw); height:auto; margin:0 auto clamp(24px,5vw,34px)}
+  .hero-logo{width:min(640px,86vw); height:auto; margin:0 auto clamp(24px,5vw,34px)}
   .tag{font-size:clamp(26px,6.4vw,46px); font-weight:700; letter-spacing:-.02em; line-height:1.1; max-width:14ch; margin:0 auto}
-  .tag em{font-style:normal; color:var(--accent)}
+  .tag em{font-style:normal; background:linear-gradient(transparent 58%, rgba(237,255,0,.9) 58%); padding:0 .06em; border-radius:2px}
   .sub{font-size:clamp(15px,3.6vw,18px); color:var(--ink-soft); max-width:46ch; margin:18px auto 0}
 
   .modes{display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin:clamp(26px,5vw,34px) auto 0; max-width:560px}
@@ -119,8 +119,8 @@
   .cta{display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:clamp(30px,6vw,40px)}
   .btn{display:inline-flex; align-items:center; gap:9px; font-size:15px; font-weight:600; text-decoration:none; padding:15px 24px; border-radius:14px; transition:.2s; border:1px solid transparent}
   .btn svg{width:18px;height:18px}
-  .btn-primary{background:var(--accent); color:#fff; box-shadow:0 10px 26px -8px rgba(17,17,20,.28)}
-  .btn-primary:hover{transform:translateY(-1px); box-shadow:0 14px 30px -8px rgba(17,17,20,.34)}
+  .btn-primary{background:var(--accent); color:var(--ink); box-shadow:0 10px 26px -8px rgba(237,255,0,.55)}
+  .btn-primary:hover{transform:translateY(-1px); box-shadow:0 14px 32px -8px rgba(237,255,0,.7)}
   .btn-ghost{background:var(--glass); color:var(--ink); border-color:rgba(255,255,255,.7); box-shadow:var(--shadow); backdrop-filter:blur(12px)}
   .btn-ghost:hover{background:#fff}
 
@@ -136,7 +136,7 @@
   .card .ico{width:34px;height:34px;border-radius:10px;background:rgba(17,17,20,.05);display:grid;place-items:center;flex:none}
   .card .ico svg{width:18px;height:18px;color:var(--ink)}
   .card p{font-size:14px; color:var(--ink-soft); margin-top:10px}
-  .card .pill{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--accent); background:rgba(17,17,20,.06); padding:4px 9px; border-radius:7px; margin-top:12px}
+  .card .pill{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--ink); background:var(--accent); padding:4px 9px; border-radius:7px; margin-top:12px}
 
   /* footer */
   footer{margin:clamp(56px,10vw,96px) 0 40px; text-align:center}
@@ -169,7 +169,7 @@
 <div class="wrap">
   <header>
     <nav class="nav">
-      <img src="assets/logo-dark.png" alt="Trincado Sport" />
+      <img src="assets/logo.svg" alt="Trincado Sport" />
       <a class="members" href="https://app.trincadosport.com" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         Acceso miembros
@@ -178,8 +178,8 @@
   </header>
 
   <section class="hero">
-    <span class="badge"><span class="dot"></span>Academia de Ciclismo y Montaña · desde 2009</span>
-    <img class="hero-logo" src="assets/logo-dark.png" alt="Trincado Sport" />
+    <span class="badge">Academia de Ciclismo y Montaña · desde 2009</span>
+    <img class="hero-logo" src="assets/logo.svg" alt="Trincado Sport" />
     <h1 class="tag">Formamos ciclistas. Construimos <em>familia</em>.</h1>
     <p class="sub">Entrenamiento de MTB, Ruta, Enduro y Trail Running en Zapopan, Jalisco. Para niños desde 6 años, adolescentes y adultos.</p>
 
@@ -226,7 +226,7 @@
       <a href="https://www.instagram.com/trincadosport" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/TrincadoSport" target="_blank" rel="noopener">Facebook</a>
     </div>
-    <p class="copy"><strong>Trincado Sport</strong> · Academia y Equipo de Ciclismo · Zapopan, Jalisco · © 2009–2026</p>
+    <p class="copy"><strong>Trincado Sport</strong> · Academia de Ciclismo y Montaña · Zapopan, Jalisco · © 2009–2026</p>
   </footer>
 </div>
 </body>
