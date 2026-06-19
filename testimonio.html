@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Comparte tu experiencia · Trincado Sport</title>
+<meta name="description" content="Cuéntanos tu experiencia con Trincado Sport. Tu testimonio ayuda a otra familia a dar el primer paso." />
+<meta name="robots" content="noindex, follow" />
+<meta name="theme-color" content="#f4f1ec" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Trincado Sport" />
+<meta property="og:title" content="Comparte tu experiencia · Trincado Sport" />
+<meta property="og:description" content="Tu testimonio ayuda a otra familia a animarse. Toma menos de 2 minutos." />
+<meta property="og:url" content="https://www.trincadosport.com/testimonio" />
+<meta property="og:image" content="https://www.trincadosport.com/assets/og.jpg" />
+<meta property="og:locale" content="es_MX" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#f4f1ec; --ink:#0A0A0A; --ink-soft:#52525b; --ink-mute:#8a8a93;
+    --line:rgba(17,17,20,.08); --accent:#EDFF00;
+    --glass:rgba(255,255,255,.62);
+    --radius:22px;
+    --shadow:0 1px 2px rgba(17,17,20,.04), 0 18px 48px -22px rgba(17,17,20,.22);
+    --ok:#0f9d58;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:"Outfit",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:var(--bg); color:var(--ink);
+    min-height:100dvh; line-height:1.5; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden; position:relative;
+  }
+  .glow{position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden}
+  .glow::before,.glow::after{content:""; position:absolute; border-radius:50%; filter:blur(90px); opacity:.55}
+  .glow::before{width:60vw;height:60vw; right:-15vw; top:-18vw; background:radial-gradient(circle,#ffd9c2,transparent 65%)}
+  .glow::after{width:55vw;height:55vw; left:-18vw; bottom:-22vw; background:radial-gradient(circle,#e9efe4,transparent 65%)}
+
+  .wrap{position:relative; z-index:1; max-width:640px; margin:0 auto; padding:0 22px}
+
+  header{position:sticky; top:0; z-index:20; padding:14px 0}
+  .nav{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    background:var(--glass); backdrop-filter:blur(18px) saturate(1.5); -webkit-backdrop-filter:blur(18px) saturate(1.5);
+    border:1px solid rgba(255,255,255,.7); border-radius:18px; padding:10px 12px 10px 16px; box-shadow:var(--shadow);
+  }
+  .nav img{height:16px; width:auto; display:block}
+  .back{
+    display:inline-flex; align-items:center; gap:7px; font-size:14px; font-weight:600; color:var(--ink);
+    text-decoration:none; white-space:nowrap; background:rgba(17,17,20,.05); border:1px solid var(--line);
+    padding:9px 14px; border-radius:12px; transition:.2s;
+  }
+  .back:hover{background:rgba(17,17,20,.09)}
+  .back svg{width:15px;height:15px}
+
+  .hero{text-align:center; padding:clamp(34px,8vw,64px) 0 clamp(20px,4vw,30px)}
+  .badge{
+    display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; letter-spacing:.02em;
+    color:var(--ink-soft); background:var(--glass); border:1px solid rgba(255,255,255,.7);
+    padding:7px 14px; border-radius:999px; box-shadow:var(--shadow); margin-bottom:clamp(20px,5vw,28px);
+  }
+  .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+  h1{font-size:clamp(26px,6.2vw,40px); font-weight:800; letter-spacing:-.02em; line-height:1.1; max-width:16ch; margin:0 auto}
+  h1 em{font-style:normal; background:linear-gradient(transparent 58%, rgba(237,255,0,.9) 58%); padding:0 .06em; border-radius:2px}
+  .lead{font-size:clamp(15px,3.6vw,17px); color:var(--ink-soft); max-width:42ch; margin:16px auto 0}
+
+  /* form card */
+  .card{
+    background:var(--glass); backdrop-filter:blur(16px) saturate(1.4); -webkit-backdrop-filter:blur(16px) saturate(1.4);
+    border:1px solid rgba(255,255,255,.7); border-radius:var(--radius); padding:clamp(20px,5vw,30px);
+    box-shadow:var(--shadow); position:relative; overflow:hidden; margin-top:6px;
+  }
+  .card::before{content:""; position:absolute; inset:0 0 auto 0; height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent)}
+  .field{margin-bottom:18px}
+  .field:last-of-type{margin-bottom:0}
+  label{display:block; font-size:13.5px; font-weight:700; color:var(--ink); margin-bottom:7px}
+  label .opt{font-weight:500; color:var(--ink-mute)}
+  .hint{font-size:12.5px; color:var(--ink-mute); margin-top:6px}
+  input[type=text], textarea{
+    width:100%; font-family:inherit; font-size:15px; color:var(--ink);
+    background:rgba(255,255,255,.7); border:1px solid var(--line); border-radius:13px;
+    padding:13px 15px; transition:.18s; -webkit-appearance:none;
+  }
+  input[type=text]:focus, textarea:focus{
+    outline:none; border-color:rgba(17,17,20,.28); background:#fff;
+    box-shadow:0 0 0 4px rgba(237,255,0,.28);
+  }
+  textarea{resize:vertical; min-height:130px; line-height:1.5}
+  input::placeholder, textarea::placeholder{color:#aaa}
+
+  /* stars */
+  .stars{display:flex; gap:6px}
+  .star{background:none; border:none; cursor:pointer; padding:2px; line-height:0}
+  .star svg{width:32px; height:32px; transition:.15s; color:#d6d3cb}
+  .star.on svg{color:var(--accent); filter:drop-shadow(0 2px 5px rgba(237,255,0,.5))}
+  .star:hover svg{transform:scale(1.12)}
+
+  /* consent */
+  .consent{display:flex; gap:11px; align-items:flex-start; cursor:pointer; user-select:none}
+  .consent input{position:absolute; opacity:0; width:0; height:0}
+  .box{width:22px; height:22px; border-radius:7px; border:1.5px solid rgba(17,17,20,.25); background:rgba(255,255,255,.7); flex:none; display:grid; place-items:center; transition:.15s; margin-top:1px}
+  .box svg{width:14px; height:14px; color:var(--ink); opacity:0; transform:scale(.6); transition:.15s}
+  .consent input:checked + .box{background:var(--accent); border-color:var(--accent)}
+  .consent input:checked + .box svg{opacity:1; transform:scale(1)}
+  .consent input:focus-visible + .box{box-shadow:0 0 0 4px rgba(237,255,0,.3)}
+  .consent span{font-size:13.5px; color:var(--ink-soft); line-height:1.45}
+
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:9px; width:100%; font-family:inherit; font-size:15.5px; font-weight:700; text-decoration:none; padding:16px 24px; border-radius:14px; transition:.2s; border:1px solid transparent; cursor:pointer}
+  .btn svg{width:18px;height:18px}
+  .btn-primary{background:var(--accent); color:var(--ink); box-shadow:0 10px 26px -8px rgba(237,255,0,.55)}
+  .btn-primary:hover{transform:translateY(-1px); box-shadow:0 14px 32px -8px rgba(237,255,0,.7)}
+  .btn-primary:disabled{opacity:.6; cursor:default; transform:none}
+
+  .formfoot{font-size:12.5px; color:var(--ink-mute); text-align:center; margin-top:14px}
+  .err{display:none; font-size:13.5px; font-weight:600; color:#c0392b; background:rgba(192,57,43,.08); border:1px solid rgba(192,57,43,.2); border-radius:12px; padding:11px 14px; margin-bottom:16px}
+
+  /* success */
+  .done{display:none; text-align:center; padding:clamp(28px,7vw,46px) 0}
+  .done .ring{width:78px;height:78px;border-radius:50%;background:rgba(15,157,88,.12);display:grid;place-items:center;margin:0 auto 22px}
+  .done .ring svg{width:40px;height:40px;color:var(--ok)}
+  .done h2{font-size:clamp(22px,5vw,30px); font-weight:800; letter-spacing:-.02em}
+  .done p{font-size:15px; color:var(--ink-soft); max-width:36ch; margin:14px auto 26px}
+
+  footer{margin:clamp(40px,8vw,64px) 0 36px; text-align:center}
+  .copy{font-size:12px; color:var(--ink-mute)}
+  .copy strong{color:var(--ink-soft); font-weight:600}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+
+<div class="wrap">
+  <header>
+    <nav class="nav">
+      <img src="assets/logo.svg" alt="Trincado Sport" />
+      <a class="back" href="/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        Volver al sitio
+      </a>
+    </nav>
+  </header>
+
+  <!-- FORM -->
+  <main id="formView">
+    <section class="hero">
+      <span class="badge"><span class="dot"></span>Tu experiencia · Trincado Sport</span>
+      <h1>Cuéntanos tu historia con <em>Trincado</em>.</h1>
+      <p class="lead">A muchas familias les da confianza leer la experiencia de otros antes de dar el primer paso. Si Trincado ha sido parte de tu camino —o el de tu hijo—, nos encantaría que lo compartas. Toma menos de 2 minutos. 🙏</p>
+    </section>
+
+    <div class="card">
+      <div class="err" id="err"></div>
+
+      <div class="field">
+        <label for="name">¿Cómo te llamas?</label>
+        <input type="text" id="name" maxlength="80" placeholder="Tu nombre" autocomplete="name" />
+      </div>
+
+      <div class="field">
+        <label for="role">¿Quién entrena en Trincado? <span class="opt">(opcional)</span></label>
+        <input type="text" id="role" maxlength="120" placeholder="Ej: mi hijo Diego · mi hija y yo · yo mismo" />
+      </div>
+
+      <div class="field">
+        <label for="since">¿Desde cuándo son parte del equipo? <span class="opt">(opcional)</span></label>
+        <input type="text" id="since" maxlength="60" placeholder="Ej: desde 2021" />
+      </div>
+
+      <div class="field">
+        <label>¿Cómo calificarías tu experiencia?</label>
+        <div class="stars" id="stars" role="radiogroup" aria-label="Calificación"></div>
+      </div>
+
+      <div class="field">
+        <label for="body">Tu testimonio</label>
+        <textarea id="body" maxlength="1200" placeholder="¿Qué te ha dado Trincado? ¿Cómo ha cambiado tu experiencia o la de tu hijo? ¿Qué le dirías a una familia que está pensando en entrar?"></textarea>
+        <div class="hint" id="count">Escribe con tus palabras, no tiene que ser perfecto.</div>
+      </div>
+
+      <div class="field">
+        <label class="consent">
+          <input type="checkbox" id="consent" />
+          <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <span>Autorizo a Trincado Sport a compartir mi testimonio y mi nombre en su página y redes sociales.</span>
+        </label>
+      </div>
+
+      <button class="btn btn-primary" id="send" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+        Enviar mi testimonio
+      </button>
+      <p class="formfoot">Lo revisamos antes de publicarlo. Gracias por tu tiempo. ♥</p>
+    </div>
+  </main>
+
+  <!-- SUCCESS -->
+  <main id="doneView" class="done">
+    <div class="ring">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    </div>
+    <h2>¡Gracias de corazón! 🙌</h2>
+    <p>Tu testimonio significa mucho para el equipo. Lo revisaremos y muy pronto ayudará a otra familia a animarse.</p>
+    <a class="btn btn-primary" href="/" style="max-width:280px;margin:0 auto;width:auto;padding-left:30px;padding-right:30px">Conoce más de Trincado</a>
+  </main>
+
+  <footer>
+    <p class="copy"><strong>Trincado Sport</strong> · Academia de Ciclismo y Montaña · Zapopan, Jalisco · © 2009–2026</p>
+  </footer>
+</div>
+
+<script>
+  var FN = 'https://rmuxpeyarmkdrlfuydtx.supabase.co/functions/v1/web-testimonio';
+  var rating = 5;
+
+  // build stars
+  var starsEl = document.getElementById('stars');
+  function starSVG(){return '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6l2.95 5.98 6.6.96-4.78 4.66 1.13 6.57L12 17.66l-5.9 3.1 1.13-6.57L2.45 9.54l6.6-.96L12 2.6z"/></svg>';}
+  for(var i=1;i<=5;i++){
+    (function(n){
+      var b=document.createElement('button');
+      b.type='button'; b.className='star'+(n<=rating?' on':''); b.setAttribute('aria-label',n+' de 5'); b.innerHTML=starSVG();
+      b.onclick=function(){ rating=n; paintStars(); };
+      starsEl.appendChild(b);
+    })(i);
+  }
+  function paintStars(){ var s=starsEl.children; for(var i=0;i<5;i++){ s[i].className='star'+((i+1)<=rating?' on':''); } }
+
+  var bodyEl=document.getElementById('body'), countEl=document.getElementById('count');
+  bodyEl.addEventListener('input',function(){
+    var n=bodyEl.value.trim().length;
+    countEl.textContent = n>0 ? (n+' caracteres') : 'Escribe con tus palabras, no tiene que ser perfecto.';
+  });
+
+  function showErr(msg){ var e=document.getElementById('err'); e.textContent=msg; e.style.display='block'; e.scrollIntoView({behavior:'smooth',block:'center'}); }
+
+  var btn=document.getElementById('send');
+  btn.addEventListener('click', async function(){
+    document.getElementById('err').style.display='none';
+    var name=document.getElementById('name').value.trim();
+    var body=document.getElementById('body').value.trim();
+    var consent=document.getElementById('consent').checked;
+    if(!name){ return showErr('Escribe tu nombre, por favor.'); }
+    if(body.length<15){ return showErr('Cuéntanos un poco más sobre tu experiencia.'); }
+    if(!consent){ return showErr('Necesitamos tu autorización para poder compartirlo.'); }
+
+    btn.disabled=true; btn.textContent='Enviando…';
+    try{
+      var res=await fetch(FN,{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({
+          name:name,
+          author_role:document.getElementById('role').value.trim(),
+          since:document.getElementById('since').value.trim(),
+          body:body, rating:rating, consent:true
+        })
+      });
+      var data=await res.json().catch(function(){return {};});
+      if(!res.ok || data.error){ throw new Error(data.error||'No se pudo enviar. Intenta de nuevo.'); }
+      document.getElementById('formView').style.display='none';
+      document.getElementById('doneView').style.display='block';
+      window.scrollTo({top:0,behavior:'smooth'});
+    }catch(e){
+      btn.disabled=false;
+      btn.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg> Enviar mi testimonio';
+      showErr(e.message || 'No se pudo enviar. Revisa tu conexión e intenta de nuevo.');
+    }
+  });
+</script>
+</body>
+</html>
