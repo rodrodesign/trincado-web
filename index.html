@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Trincado Sport · Academia de Ciclismo y Montaña en Zapopan</title>
-<meta name="description" content="Academia de ciclismo y montaña en Zapopan, Jalisco. Entrenamiento de MTB, Ruta, Enduro y Trail Running para niños desde 6 años, adolescentes y adultos. Desde 2009." />
+<meta name="description" content="Trincado en Zapopan, Jalisco: academia de ciclismo y montaña (MTB, Ruta, Enduro, Trail Running) y Trincado XP, experiencias outdoor para escuelas, familias y empresas. Desde 2009." />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#f4f1ec" />
 <link rel="canonical" href="https://trincadosport.com/" />
@@ -60,6 +60,9 @@
     --glass:rgba(255,255,255,.62);
     --radius:22px;
     --shadow:0 1px 2px rgba(17,17,20,.04), 0 18px 48px -22px rgba(17,17,20,.22);
+    --xp-olive:#5a5e40;
+    --xp-sand:#e8e1d3;
+    --xp-ink:#26261f;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%}
@@ -146,6 +149,49 @@
   .copy{font-size:12.5px; color:var(--ink-mute)}
   .copy strong{color:var(--ink-soft); font-weight:600}
 
+  /* eyebrow */
+  .eyebrow{display:block; font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-mute)}
+
+  /* dos caminos */
+  .paths{display:grid; grid-template-columns:1fr; gap:18px; margin:clamp(28px,5vw,42px) auto 0; max-width:920px; text-align:left}
+  .path{border-radius:24px; overflow:hidden; display:flex; flex-direction:column; box-shadow:var(--shadow); border:1px solid rgba(255,255,255,.7); background:var(--glass); backdrop-filter:blur(16px) saturate(1.4); -webkit-backdrop-filter:blur(16px) saturate(1.4)}
+  .path .media{aspect-ratio:16/10; position:relative; background-size:cover; background-position:center 35%}
+  .path .media .num{position:absolute; top:13px; left:13px; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:#fff; background:rgba(10,10,10,.4); -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); padding:5px 10px; border-radius:8px}
+  .path .body{padding:20px 20px 22px; display:flex; flex-direction:column; gap:11px; flex:1}
+  .path h2{font-size:clamp(20px,4vw,25px); font-weight:800; letter-spacing:-.02em; line-height:1.08}
+  .path .lead{font-size:14px; color:var(--ink-soft)}
+  .path .chips{display:flex; flex-wrap:wrap; gap:6px; margin-top:1px}
+  .path .chip{font-size:11.5px; font-weight:600; padding:5px 10px; border-radius:999px; background:rgba(17,17,20,.05); border:1px solid var(--line); color:var(--ink)}
+  .path .chip-accent{background:var(--accent); border-color:transparent}
+  .path .go{margin-top:auto; padding-top:6px}
+  .path-sport .media{background-image:url('assets/hero-sport.jpg')}
+  .path-sport .eyebrow{color:#8a8a06}
+  /* XP card — arena/olivo */
+  .path-xp{background:linear-gradient(180deg,#efe9dc,#e6dfcf); border-color:rgba(90,94,64,.2)}
+  .path-xp .eyebrow{color:var(--xp-olive)}
+  .path-xp .media{background:radial-gradient(130% 90% at 50% 130%, rgba(90,94,64,.4), transparent 62%), linear-gradient(180deg,#dcd6c6,#cec7b4); display:grid; place-items:center}
+  .path-xp .media .mline{width:100%; height:100%; position:absolute; inset:0; opacity:.22}
+  .path-xp .ph-tag{position:absolute; bottom:11px; right:11px; font-size:10px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:rgba(38,38,31,.55); background:rgba(255,255,255,.55); padding:4px 9px; border-radius:7px}
+
+  /* botones oliva */
+  .btn-olive{background:var(--xp-olive); color:#f4f1ec; box-shadow:0 10px 26px -10px rgba(90,94,64,.6)}
+  .btn-olive:hover{transform:translateY(-1px); filter:brightness(1.07)}
+
+  /* franja XP (arena, full-bleed) */
+  .xp-band{width:100vw; margin-left:calc(50% - 50vw); margin-top:clamp(48px,9vw,86px); padding:clamp(42px,8vw,76px) 0; background:linear-gradient(180deg,#ece5d7,#e3dccb); position:relative; overflow:hidden}
+  .xp-band .wrap2{max-width:1080px; margin:0 auto; padding:0 22px; position:relative; z-index:1}
+  .xp-band .xplogo-lg{width:min(280px,70vw); height:auto; margin-bottom:18px; display:block}
+  .xp-band .xp-trust{display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.02em; color:var(--xp-olive); margin-bottom:10px}
+  .xp-band h2{font-size:clamp(23px,4.6vw,34px); font-weight:800; letter-spacing:-.02em; line-height:1.1; max-width:19ch; color:var(--xp-ink)}
+  .xp-band .sub{font-size:clamp(15px,3.4vw,17px); color:#55524a; max-width:50ch; margin-top:14px}
+  .xp-exps{display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin:26px 0 22px}
+  .xp-exp{display:flex; align-items:center; gap:10px; background:rgba(255,255,255,.55); border:1px solid rgba(90,94,64,.16); border-radius:14px; padding:12px 14px; font-size:14px; font-weight:600; color:#33322b}
+  .xp-exp svg{width:18px; height:18px; color:var(--xp-olive); flex:none}
+  .xp-note{font-size:12.5px; color:#807b6f; margin-top:14px}
+  .xp-mtns{position:absolute; left:0; right:0; bottom:-1px; width:100%; height:auto; opacity:.1; pointer-events:none; z-index:0}
+  @media(min-width:680px){ .xp-exps{grid-template-columns:repeat(3,1fr)} }
+  @media(min-width:860px){ .paths{grid-template-columns:1fr 1fr; gap:20px} }
+
   @media(min-width:720px){
     .places{grid-template-columns:repeat(3,1fr)}
   }
@@ -178,31 +224,76 @@
   </header>
 
   <section class="hero">
-    <span class="badge">Academia de Ciclismo y Montaña · desde 2009</span>
-    <img class="hero-logo" src="assets/logo.svg" alt="Trincado Sport" />
-    <h1 class="tag">Formamos ciclistas. Construimos <em>familia</em>.</h1>
-    <p class="sub">Entrenamiento de MTB, Ruta, Enduro y Trail Running en Zapopan, Jalisco. Para niños desde 6 años, adolescentes y adultos.</p>
+    <span class="badge"><span class="dot"></span>Desde 2009 · Zapopan, Jalisco</span>
+    <img class="hero-logo" src="assets/logo.svg" alt="Trincado" />
+    <h1 class="tag">Dos formas de vivir la <em>aventura</em>.</h1>
+    <p class="sub">Entrenamiento deportivo y experiencias al aire libre. Una misma familia: Trincado.</p>
 
-    <div class="modes">
-      <span class="mode">Cross Country / MTB</span>
-      <span class="mode">Ruta</span>
-      <span class="mode">Enduro</span>
-      <span class="mode">Trail Running</span>
-    </div>
+    <div class="paths">
+      <!-- TRINCADO SPORT -->
+      <article class="path path-sport">
+        <div class="media"><span class="num">Entrenamiento</span></div>
+        <div class="body">
+          <span class="eyebrow">Trincado Sport</span>
+          <h2>Formación y desarrollo deportivo.</h2>
+          <p class="lead">MTB, Ruta, Enduro y Trail Running para niños, jóvenes y adultos. Clases por nivel, todo el año.</p>
+          <div class="chips">
+            <span class="chip">Kids</span><span class="chip">Junior</span><span class="chip">Adultos</span>
+            <span class="chip">Ruta</span><span class="chip">MTB</span><span class="chip">Enduro</span>
+            <span class="chip">Trail Running</span><span class="chip chip-accent">App Trincado</span>
+          </div>
+          <div class="go">
+            <a class="btn btn-primary" href="https://wa.me/523310320177?text=Hola%2C%20quiero%20entrenar%20con%20Trincado%20Sport.%20%C2%BFMe%20pasan%20informaci%C3%B3n%3F" target="_blank" rel="noopener">Entrenar con nosotros</a>
+          </div>
+        </div>
+      </article>
 
-    <div class="cta">
-      <a class="btn btn-primary" href="https://wa.me/523310320177?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20una%20clase%20de%20prueba%20en%20Trincado%20Sport." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
-        Agenda tu clase de prueba
-      </a>
-      <a class="btn btn-ghost" href="https://www.instagram.com/trincadosport" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        Síguenos en Instagram
-      </a>
+      <!-- TRINCADO XP -->
+      <article class="path path-xp">
+        <div class="media">
+          <svg class="mline" viewBox="0 0 400 250" preserveAspectRatio="none" fill="none" stroke="#5a5e40" stroke-width="2"><path d="M0 205 L70 120 L120 165 L195 85 L255 150 L325 95 L400 165"/></svg>
+          <span class="ph-tag">Foto · por definir</span>
+        </div>
+        <div class="body">
+          <span class="eyebrow">Trincado XP · Outdoor Experiences</span>
+          <h2>Experiencias al aire libre.</h2>
+          <p class="lead">Diseñadas para conectar personas con la naturaleza a través de la aventura, la exploración y el aprendizaje.</p>
+          <div class="chips">
+            <span class="chip">Hiking</span><span class="chip">Campamentos</span><span class="chip">Graduaciones</span>
+            <span class="chip">Team Building</span><span class="chip">Viajes</span><span class="chip">Familiares</span>
+          </div>
+          <div class="go">
+            <a class="btn btn-olive" href="#xp">Explorar experiencias</a>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
-  <section class="places">
+  <section class="xp-band" id="xp">
+    <div class="wrap2">
+      <img class="xplogo-lg" src="assets/xp-logo.svg" alt="Trincado XP · Outdoor Experiences" />
+      <span class="xp-trust">◇ +15 años creando aventura en la montaña</span>
+      <h2>Experiencias outdoor para escuelas, familias, empresas y aventureros.</h2>
+      <p class="sub">Explorar, aprender y convivir. Cada experiencia está diseñada para desarrollar confianza, trabajo en equipo, liderazgo y conexión con la naturaleza.</p>
+      <div class="xp-exps">
+        <div class="xp-exp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>Hiking</div>
+        <div class="xp-exp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20 12 4l9 16"/><path d="M12 4v16"/><path d="m8 20 4-7 4 7"/></svg>Campamentos</div>
+        <div class="xp-exp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg>Escuelas</div>
+        <div class="xp-exp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Empresas</div>
+        <div class="xp-exp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15 9-3.8 1.2L10 15l3.8-1.2L15 9z"/></svg>Viajes</div>
+        <div class="xp-exp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Family Adventures</div>
+      </div>
+      <div class="cta" style="justify-content:flex-start;margin-top:4px">
+        <a class="btn btn-olive" href="https://wa.me/523310320177?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20experiencias%20outdoor%20de%20Trincado%20XP." target="_blank" rel="noopener">Solicitar información</a>
+      </div>
+      <p class="xp-note">La sección completa de Trincado XP — próximamente.</p>
+    </div>
+    <svg class="xp-mtns" viewBox="0 0 1440 200" preserveAspectRatio="none" fill="#5a5e40"><path d="M0 200 240 70 380 130 600 40 780 120 980 50 1180 110 1320 60 1440 120 1440 200Z"/></svg>
+  </section>
+
+  <p class="eyebrow" style="text-align:center; margin-top:clamp(48px,9vw,80px)">Dónde estamos</p>
+  <section class="places" style="margin-top:14px">
     <div class="card">
       <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg></span>Bosque La Primavera</h3>
       <p>Entrenamientos de montaña y ruta en uno de los mejores escenarios naturales de Jalisco.</p>
