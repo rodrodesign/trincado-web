@@ -2,6 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/privacidad", "destination": "https://app.trincadosport.com/privacidad", "permanent": false }
+  ],
   "headers": [
     {
       "source": "/(.*)",
