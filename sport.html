@@ -35,14 +35,122 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SportsActivityLocation",
-  "name": "Trincado Sport · Academia de Ciclismo",
-  "description": "Academia de ciclismo de montaña (Cross Country, Ruta, Enduro) y Trail Running en Zapopan. Para niños desde 6 años y adultos. Clase de prueba gratis.",
-  "url": "https://www.trincadosport.com/sport",
-  "telephone": "+523310320177",
-  "foundingDate": "2009-11-10",
-  "areaServed": "Zapopan, Jalisco, México",
-  "sameAs": ["https://www.instagram.com/trincadosport","https://www.facebook.com/share/1Z3GtetZBu/"]
+  "@graph": [
+    {
+      "@type": "SportsActivityLocation",
+      "@id": "https://www.trincadosport.com/sport#academia",
+      "name": "Trincado Sport · Academia de Ciclismo y Trail Running",
+      "url": "https://www.trincadosport.com/sport",
+      "telephone": "+523310320177",
+      "email": "info@trincadosport.com",
+      "foundingDate": "2009-11-10",
+      "description": "Academia de ciclismo de montaña (Cross Country, Ruta, Enduro) y Trail Running en Zapopan, Jalisco. Niños desde 6 años, jóvenes y adultos. Grupos por nivel: principiante, intermedio, avanzado y competitivo. Entrenamientos en el Bosque La Primavera (El Tecuán). Clase de prueba gratis. App propia para avisos, calendario, logros y pagos.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Zapopan",
+        "addressRegion": "Jalisco",
+        "addressCountry": "MX"
+      },
+      "areaServed": [
+        "Zapopan",
+        "Guadalajara",
+        "Jalisco"
+      ],
+      "audience": {
+        "@type": "PeopleAudience",
+        "suggestedMinAge": 6
+      },
+      "sameAs": [
+        "https://www.instagram.com/trincadosport",
+        "https://www.facebook.com/share/1Z3GtetZBu/"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Mensualidad por disciplina",
+          "price": "1200",
+          "priceCurrency": "MXN",
+          "description": "Mensualidad de entrenamiento por disciplina (Cross Country, Ruta, Enduro o Trail Running). Descuento por disciplina adicional y por familia."
+        },
+        {
+          "@type": "Offer",
+          "name": "Inscripción anual",
+          "price": "1500",
+          "priceCurrency": "MXN",
+          "description": "Inscripción anual por alumno. Descuento por cada miembro adicional de la familia."
+        },
+        {
+          "@type": "Offer",
+          "name": "Clase de prueba",
+          "price": "0",
+          "priceCurrency": "MXN",
+          "description": "Primera clase totalmente gratis y sin compromiso."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.trincadosport.com/sport#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Desde qué edad pueden entrar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Desde los 6 años, y no hay edad máxima. Entrenamos niños, jóvenes y adultos, cada quien en su grupo por nivel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito experiencia previa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Hay grupos desde principiante. Te ubicamos según tu nivel y avanzas a tu ritmo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito mi propia bicicleta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, cada alumno entrena con su propia bicicleta. Si no tienes una, en Bike 88 (tienda y taller de Trincado, Av. Patria 870, Zapopan) te asesoramos y equipamos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde y cuándo entrenan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Principalmente en el Bosque La Primavera, zona El Tecuán. Los horarios dependen del grupo y se comparten por WhatsApp al agendar la clase de prueba."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si llueve o se cancela?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Si se cancela por clima, se avisa a tiempo por la app de Trincado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La clase de prueba tiene costo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, la primera clase es totalmente gratis y sin compromiso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta entrenar en Trincado Sport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La mensualidad es de $1,200 MXN por disciplina (con descuento si entrenas más de una) y la inscripción anual es de $1,500 MXN, con descuento por cada miembro adicional de la familia."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 
