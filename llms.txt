@@ -26,8 +26,19 @@
 - Bicicleta propia (asesoría y equipamiento disponible en Bike 88)
 - No se necesita experiencia previa: hay grupos desde principiante
 
+## Programa de Habilidades (metodología)
+
+Trincado Sport no improvisa el contenido de las clases de niños: usa un Programa de Habilidades ordenado por etapas, basado en el modelo LTAD (Long-Term Athlete Development / desarrollo del atleta a largo plazo), el mismo marco que emplean federaciones deportivas de varios países para formar niños.
+
+- Principio: un niño no es un adulto en miniatura. Primero equilibrio y coordinación, después técnica, y solo más adelante carga de entrenamiento. Ese orden forma mejores ciclistas y previene lesiones y abandono temprano del deporte.
+- Etapa 1 · Fundamentos (6 a 8 años): equilibrio, control de la bicicleta y confianza, aprendiendo mediante el juego.
+- Etapa 2 · Aprende a Entrenar (9 a 11 años): técnica de frenado, postura, lectura del terreno, subir y bajar con criterio.
+- Etapa 3 · Entrena para Entrenar (12 a 14 años): entrenamiento estructurado, constancia, esfuerzo medido y preparación para competir si el alumno lo desea.
+- El alumno avanza por dominio demostrado en terreno, no por resultados en competencia. El entrenador marca cada habilidad cuando la ve dominada y la familia lo consulta en la app, con la fecha en que se logró.
+
 ## Diferenciadores
 
+- Metodología LTAD por etapas para el grupo Kids, con avance por habilidades visible para la familia en la app
 - Única academia local con app propia: avisos en tiempo real (incl. cancelaciones por clima), calendario, avance y logros del alumno, pagos en línea
 - Seguridad primero: grupos pequeños, entrenadores capacitados, deslindes y fichas médicas digitales
 - Respaldo de taller propio (Bike 88)

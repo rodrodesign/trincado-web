@@ -94,6 +94,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "¿Qué le van a enseñar exactamente a mi hijo en Trincado Sport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trincado Sport usa un Programa de Habilidades ordenado por etapas según la edad del niño, basado en el modelo LTAD (Long-Term Athlete Development, desarrollo del atleta a largo plazo): Fundamentos de 6 a 8 años (equilibrio, control de la bici y confianza), Aprende a Entrenar de 9 a 11 años (técnica de frenado, postura y lectura del terreno) y Entrena para Entrenar de 12 a 14 años (entrenamiento estructurado y preparación para competir). El entrenador marca cada habilidad cuando el alumno la domina en terreno, y la familia lo ve en la app con la fecha en que la logró."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "¿Desde qué edad pueden entrar?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -234,6 +242,18 @@
   .who .card p{font-size:14.5px; color:var(--ink-soft); margin-top:8px}
 
   /* por qué */
+  /* Programa de Habilidades: las 3 etapas del método */
+  .etapas{display:grid; grid-template-columns:1fr; gap:12px; margin-top:18px}
+  .etapa{display:flex; gap:14px; align-items:flex-start; padding:18px 20px; background:var(--glass); border:1px solid var(--line); border-radius:var(--radius)}
+  .etapa .em{font-size:26px; line-height:1; flex:none}
+  .etapa h3{font-size:16.5px; font-weight:700; letter-spacing:-.01em}
+  .etapa .edad{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--ink-mute); margin-top:2px}
+  .etapa p{font-size:14px; color:var(--ink-soft); margin-top:6px}
+  .metodo-nota{margin-top:18px; padding:18px 20px; border:1px solid var(--line); border-radius:var(--radius); background:rgba(255,255,255,.4)}
+  .metodo-nota p{font-size:14px; color:var(--ink-soft)}
+  .metodo-nota b{color:var(--ink)}
+  @media(min-width:760px){ .etapas{grid-template-columns:repeat(3,1fr)} .etapa{flex-direction:column; gap:10px} }
+
   .why{display:grid; grid-template-columns:1fr; gap:14px}
   .why .card{display:flex; gap:15px; align-items:flex-start; padding:20px}
   .why .ico{width:42px;height:42px;border-radius:12px;background:rgba(17,17,20,.05);display:grid;place-items:center;flex:none}
@@ -375,6 +395,50 @@
         <h3>Jóvenes y adultos</h3>
         <p>Desde principiante hasta competitivo. Mejora tu técnica y condición —o lánzate a competir— acompañado de una gran comunidad.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMA DE HABILIDADES -->
+  <section class="sec" id="habilidades">
+    <div class="sec-head">
+      <span class="eyebrow">Cómo enseñamos a los niños</span>
+      <h2>Programa de Habilidades: un método, no una lista de ocurrencias.</h2>
+      <p>Lo que tu hijo aprende en Trincado sigue un orden. Ese orden viene del <b>LTAD</b> —desarrollo del atleta a largo plazo—, el modelo que usan federaciones deportivas de varios países para formar niños.</p>
+    </div>
+
+    <div class="metodo-nota">
+      <p>La idea de fondo es simple: <b>un niño no es un adulto en chiquito.</b> Hay edades en las que el cuerpo aprende mejor ciertas cosas. Primero equilibrio y coordinación, después técnica, y solo más adelante carga de entrenamiento. Enseñar en ese orden forma mejores ciclistas —y sobre todo evita lesiones y que se aburran y lo dejen.</p>
+    </div>
+
+    <div class="etapas">
+      <div class="etapa">
+        <span class="em">🌱</span>
+        <div>
+          <h3>Fundamentos</h3>
+          <span class="edad">6 a 8 años</span>
+          <p>Equilibrio, control de la bici y confianza. Jugando, que es como se aprende a esa edad.</p>
+        </div>
+      </div>
+      <div class="etapa">
+        <span class="em">🚀</span>
+        <div>
+          <h3>Aprende a Entrenar</h3>
+          <span class="edad">9 a 11 años</span>
+          <p>Técnica de verdad: frenado, postura, lectura del terreno, subir y bajar con criterio.</p>
+        </div>
+      </div>
+      <div class="etapa">
+        <span class="em">🏔️</span>
+        <div>
+          <h3>Entrena para Entrenar</h3>
+          <span class="edad">12 a 14 años</span>
+          <p>Ahora sí, entrenamiento estructurado: constancia, esfuerzo medido y preparación para competir si así lo quiere.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="metodo-nota">
+      <p><b>Qué significa para tu hijo:</b> avanza por lo que domina, no por dónde llegó el sábado. No importa quién ganó la rodada: importa que ya sabe frenar en bajada sin bloquear la llanta. Su entrenador marca cada habilidad cuando la ve dominada en terreno, y <b>tú lo ves en la app</b> —con la fecha en que la logró.</p>
     </div>
   </section>
 
@@ -525,6 +589,10 @@
       <details class="qa">
         <summary>¿Desde qué edad pueden entrar? <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
         <div class="ans">Desde los 6 años, y no hay edad máxima. Entrenamos niños, jóvenes y adultos, cada quien en su grupo por nivel.</div>
+      </details>
+      <details class="qa">
+        <summary>¿Qué le van a enseñar exactamente a mi hijo? <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans">Seguimos un <b>Programa de Habilidades</b> ordenado por etapas según su edad, basado en el modelo LTAD (desarrollo del atleta a largo plazo): primero equilibrio y coordinación, después técnica, y más adelante entrenamiento estructurado. Su entrenador marca cada habilidad cuando la domina en terreno, y tú lo ves en la app con la fecha en que la logró. <a href="#habilidades">Ver cómo funciona</a>.</div>
       </details>
       <details class="qa">
         <summary>¿Necesito experiencia previa? <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
